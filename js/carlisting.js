@@ -7,7 +7,7 @@ const carlistings = {
             "luggageCapacity": 4,
             "numberOfDoors": 4,
             "passengerCapacity": 4,
-            "description": "The Mitsubishi Pajero offers comfort and space for your adventure. Book it now!"
+            "description": "The BYD Atto 3 Electric offers comfort and space for your adventure. Book it now!"
         },
         {
             "name": "Lexus UX250h 2.0A",
@@ -16,7 +16,7 @@ const carlistings = {
             "luggageCapacity": 4,
             "numberOfDoors": 4,
             "passengerCapacity": 4,
-            "description": "Experience the Nissan Moco's compact yet versatile design. Book it now for your daily adventures!"
+            "description": "Experience the Lexus UX250h's compact yet versatile design. Book it now for your daily adventures!"
         },
         {
             "name": "Toyota Noah Hybrid 1.8A",
@@ -25,7 +25,7 @@ const carlistings = {
             "luggageCapacity": 5,
             "numberOfDoors": 4,
             "passengerCapacity": 6,
-            "description": "Explore the city with the Honda Fitta. Book it now for your daily adventures!"
+            "description": "Explore the city with the Toyota Noah Hybrid 1.8A. Book it now for your daily adventures!"
         },
         {
             "name": "Honda Vezel 1.5A",
@@ -34,7 +34,7 @@ const carlistings = {
             "luggageCapacity": 4,
             "numberOfDoors": 4,
             "passengerCapacity": 4,
-            "description": "Travel in style with the Skoda Laura. Book it now and enjoy a luxurious ride!"
+            "description": "Travel in style with the Honda Vezel 1.5A. Book it now and enjoy a luxurious ride!"
         },
         {
             "name": "Toyota Sienta Hybrid 1.5A",
@@ -43,7 +43,7 @@ const carlistings = {
             "luggageCapacity": 5,
             "numberOfDoors": 4,
             "passengerCapacity": 4,
-            "description": "Experience the thrill of driving with the Mazda LaPuta. Book it now!"
+            "description": "Experience the thrill of driving with the Toyota Sienta Hybrid 1.5A. Book it now!"
         },
         {
             "name": "Honda Freed Hybrid 1.5A",
@@ -52,7 +52,7 @@ const carlistings = {
             "luggageCapacity": 5,
             "numberOfDoors": 4,
             "passengerCapacity": 6,
-            "description": "Discover the elegance of the Buick LaCrosse. Book it now for a luxurious experience!"
+            "description": "Discover the elegance of the Honda Freed Hybrid 1.5A. Book it now for a luxurious experience!"
         }
     ]
 }
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div>
                   <p>${car.description}</p>
-                  <p><a href="#" class="btn btn-primary btn-sm">Rent Now</a></p>
+                  <p><a href="car.html" class="btn btn-primary btn-sm">Rent Now</a></p>
                 </div>
               </div>
             </div>

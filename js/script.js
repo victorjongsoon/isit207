@@ -82,13 +82,18 @@ function handleLogin() {
     const alertElement = document.getElementById('login-alert');
 
     if (isValid) {
-        // If login is successful, display a success alert
-        alertElement.classList.remove('alert-danger');
-        alertElement.classList.add('alert-success');
-        alertElement.innerHTML = 'Welcome to AZoom Car Rental.';
-        alertElement.style.display = 'block';
-        // Place your logic for successful login here
-        // For example, you can redirect the user to another page
+        // Find the user object in the JSON data
+        const user = users.users.find(user => user.username === username);
+
+        if (user) {
+            // If the user is found, display a personalized greeting
+            alertElement.classList.remove('alert-danger');
+            alertElement.classList.add('alert-success');
+            alertElement.innerHTML = `Hi ${user.name}, Welcome to AZoom Car Rental!`;
+            alertElement.style.display = 'block';
+            // Place your logic for successful login here
+            // For example, you can redirect the user to another page
+        }
     } else {
         // If login is unsuccessful, display a danger alert
         alertElement.classList.remove('alert-success');
