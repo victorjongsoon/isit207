@@ -1,3 +1,28 @@
+const users = {
+    "users": [
+        {
+            "name": "John Doe",
+            "username": "john.doe",
+            "password": "pass123"
+        },
+        {
+            "name": "Jane Smith",
+            "username": "jane.smith",
+            "password": "pass123"
+        },
+        {
+            "name": "Alice Johnson",
+            "username": "alice.johnson",
+            "password": "pass123"
+        },
+        {
+            "name": "Bob Brown",
+            "username": "bob.brown",
+            "password": "pass123"
+        }
+    ]
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // Initialize the datepicker with startDate option set to today
     $('#pick-up-date, #drop-off-date').datepicker({
@@ -22,19 +47,12 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('youtubeVideo', {
         videoId: videoId,
         playerVars: {
-            'autoplay': 1, // Autoplay the video
+            'autoplay': 0, // Autoplay the video
             'rel': 0,      // Disable related videos at the end
-        },
-        events: {
-            'onReady': onPlayerReady
         }
     });
 }
 
-// Function to start playing the video when the player is ready
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
 
 // Function to stop the YouTube video
 function stopVideo() {
@@ -50,3 +68,50 @@ $('#videoModal').on('hidden.bs.modal', function () {
 $(document).on('click', '.play-now', function () {
     $('#videoModal').modal('show');
 });
+
+// Function to handle login
+function handleLogin() {
+    // Get the username and password from the input fields
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Check if the username and password are correct (you can replace this with your actual validation logic)
+    const isValid = validateLogin(username, password);
+
+    // Get the Bootstrap alert element within the modal content
+    const alertElement = document.getElementById('login-alert');
+
+    if (isValid) {
+        // If login is successful, display a success alert
+        alertElement.classList.remove('alert-danger');
+        alertElement.classList.add('alert-success');
+        alertElement.innerHTML = 'Welcome to AZoom Car Rental.';
+        alertElement.style.display = 'block';
+        // Place your logic for successful login here
+        // For example, you can redirect the user to another page
+    } else {
+        // If login is unsuccessful, display a danger alert
+        alertElement.classList.remove('alert-success');
+        alertElement.classList.add('alert-danger');
+        alertElement.innerHTML = 'Incorrect username or password. Please try again.';
+        alertElement.style.display = 'block';
+    }
+
+    // Toggle the visibility of the alert
+    alertElement.classList.remove('d-none');
+}
+
+// Define the validateLogin function
+function validateLogin(username, password) {
+    // You can implement your login validation logic here
+    // For example, you can compare the provided username and password with your user data
+    for (const user of users.users) {
+        if (user.username === username && user.password === password) {
+            return true; // Valid login
+        }
+    }
+    return false; // Invalid login
+}
+
+// Attach a click event listener to the "Login" button
+document.getElementById('login-button').addEventListener('click', handleLogin);

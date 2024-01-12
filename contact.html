@@ -74,7 +74,8 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-7 text-center mb-5">
                         <h2>Contact Us</h2>
-                        <p>Got questions or inquiries? Feel free to get in touch with us. We'd love to hear from you and assist with your car rental needs.</p>
+                        <p>Got questions or inquiries? Feel free to get in touch with us. We'd love to hear from you and
+                            assist with your car rental needs.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -168,6 +169,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <!-- Bootstrap Alert -->
+                    <div id="login-alert" class="alert alert-danger d-none" role="alert">
+                        Incorrect username or password. Please try again.
+                    </div>
                     <!-- Your login form goes here -->
                     <form>
                         <div class="form-group">
@@ -189,7 +194,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button id="login-button" type="button" class="btn btn-primary">Login</button>
                 </div>
             </div>
         </div>

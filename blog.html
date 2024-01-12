@@ -135,6 +135,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <!-- Bootstrap Alert -->
+                    <div id="login-alert" class="alert alert-danger d-none" role="alert">
+                        Incorrect username or password. Please try again.
+                    </div>
                     <!-- Your login form goes here -->
                     <form>
                         <div class="form-group">
@@ -156,7 +160,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Login</button>
+                    <button id="login-button" type="button" class="btn btn-primary">Login</button>
                 </div>
             </div>
         </div>
