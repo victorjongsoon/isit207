@@ -1731,6 +1731,12 @@ h1, h2, h3, h4, h5,
 .section-heading strong {
   font-weight: 700; }
 
+ /* CSS for the search bar */
+.custom-search {
+  margin-bottom: 50px; /* Add margin to the bottom of the search bar */
+}
+
+
 .img-wrap-1 img {
   max-width: 400px; }
 
