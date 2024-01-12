@@ -481,6 +481,11 @@ h1, h2, h3, h4, h5,
       font-weight: 900; }
     .site-navbar .site-logo a {
       color: #000; }
+    /* Add style for the active link underline */
+    .site-menu .active a {
+      font-size: 125%;
+      font-weight: normal;
+    }
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
         float: left;
@@ -506,6 +511,7 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
+          transform:scale(1.2);
           color: #000; }
       .site-navbar .site-navigation .site-menu > li.active > a {
         color: #000; }
