@@ -1,4 +1,4 @@
-# Assignment 2 | AZoom Car Rental
+# Assignment 2 | AZoom Car Rental | [Live Site](https://victorjongsoon.github.io/isit207/blog.html)
 AZoom Car Rental is a local car rental company that specializes in renting electric car for the public.
 
 ## Usage
