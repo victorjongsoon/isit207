@@ -15,6 +15,6 @@ AZoom Car Rental is a local car rental company that specializes in renting elect
 ## Author
 - LinkedIn - [Victor Jong](https://www.linkedin.com/in/victorjongsoon/)
 
-## Note
-- Do credit if you are taking resources from here
+## Important Note
+- Please do not use any code in this repo
 - Finalizing README...
