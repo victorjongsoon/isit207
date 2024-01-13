@@ -2,12 +2,21 @@
 AZoom Car Rental is a local car rental company that specializes in renting electric car for the public.
 
 ## Screenshots
-![desktop1](./img/main1.png)
+![main1](./img/main1.png)
+![main2](./img/main2.png)
+![main3](./img/main3.png)
+![main4](./img/main4.png)
+![main5](./img/main5.png)
+![main6](./img/main6.png)
 
-## Usage
+## Usages
 1. HTML
 2. CSS
 3. JavaScript
+
+## Installation
+1. git clone into your local machine
+2. open index.html with your browser e.g., Firefox, Google Chrome, Microsoft Edge
 
 ## Credits
 1. [Sgcarmart](https://www.sgcarmart.com/main/index.php) - Car Images are downloaded from Sgcarmart
