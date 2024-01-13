@@ -2,7 +2,7 @@
 AZoom Car Rental is a local car rental company that specializes in renting electric car for the public.
 
 ## Screenshots
-![desktop1](./img/main.png)
+![desktop1](./img/main1.png)
 
 ## Usage
 1. HTML
@@ -18,6 +18,6 @@ AZoom Car Rental is a local car rental company that specializes in renting elect
 ## Author
 - LinkedIn - [Victor Jong](https://www.linkedin.com/in/victorjongsoon/)
 
-## Important Note
+## Important Notes
 - Please do not use any code in this repo
 - Finalizing README...
