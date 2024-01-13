@@ -30,3 +30,6 @@ AZoom Car Rental is a local car rental company that specializes in renting elect
 ## Important Notes
 - Please do not use any code in this repo
 - Finalizing README...
+
+## Other Resources
+- How to rent? - [AZoom Car Rental](https://www.youtube.com/watch?v=xF3g6_i9lSE)
